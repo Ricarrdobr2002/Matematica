@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    top:12vh !important;
+    left: 5px;
+    width: 25vw;
+    height: 20px;
+}
+body{overflow: hidden;}
+
+
+label{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 2vw;
+}
+
+#body22{background-color: rgb(160, 189, 132);display: flex;width: 100vw;height: 100vh;justify-content: center;
+align-items: center;flex-direction: column;overflow: hidden;}
+
+#corpo{
+    
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: space-around;
+    transition: 0.5s;
+    rotate: none;
+}
+
+
+#balanca{
+    rotate: none;
+    width: 70vw;
+    background-color: black;
+    height: 30px;
+    order: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#balanca div{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+#corpo1,#corpo2{
+    height: 20vh;
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: grab;
+    transition: 0s;
+}
+.red{background-color: rgb(250, 148, 148);border: solid black;}
+.blue{background-color: rgb(108, 193, 250);border: solid black;}
+
+
+
+@media only screen and (max-width: 768px) {
+    .box{
+    width: 5vw;
+    height: 5vw;
+}}
+
+button{
+    position: absolute;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    left: 100px;
+    top: 15vh;
+    cursor: pointer;
+}
+#cor{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#respostaC{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.699);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#respostaC h1{
+    font-size: 6vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
